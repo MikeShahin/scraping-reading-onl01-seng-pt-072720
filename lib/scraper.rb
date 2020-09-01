@@ -5,4 +5,5 @@ html = open("https://flatironschool.com/")
 
 doc = Nokogiri::HTML(html)
 
-puts doc
+h1 = doc.css(".headline-260IBN")
+puts h1
